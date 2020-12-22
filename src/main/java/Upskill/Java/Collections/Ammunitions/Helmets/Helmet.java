@@ -46,7 +46,7 @@ public class Helmet extends Ammunition {
       return super.toString().replace("}",
             "Helmet{" +
                   "helmetType=" + helmetType +
-                  "airStabilizers=" + airStabilizers +
+                  ", airStabilizers=" + airStabilizers +
                   ", videoRegistrationSlot=" + videoRegistrationSlot +
                   "}}");
    }

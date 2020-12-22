@@ -46,7 +46,7 @@ public class GlovesProto extends Ammunition {
       return super.toString().replace("}",
             "GlovesProto{" +
                   "glovesType=" + glovesType +
-                  "wristProtection=" + wristProtection +
+                  ", wristProtection=" + wristProtection +
                   ", fingerProtection=" + fingerProtection +
                   "}}");
    }

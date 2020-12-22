@@ -61,6 +61,35 @@ public class Runner
 
     public static void main( String[] args )
     {
-        ShopStore shop = new ShopStore();
+        ShopStore shop = new ShopStore(store);
+
+        ShoppingCart cart = new ShoppingCart();
+
+        shop.addAmmunitionByIndexToCart(cart,0);
+        shop.addAmmunitionByIndexToCart(cart,3);
+        shop.addAmmunitionByIndexToCart(cart,6);
+        shop.addAmmunitionByIndexToCart(cart,9);
+        shop.addAmmunitionByIndexToCart(cart,12);
+        System.out.println(cart.toString());
+        System.out.println("Cost of ammunition in cart = " + cart.calculateCostOfAmmunitionInCart());
+
+        cart.returnAmmunitionFromCartToStore(2);
+        System.out.println(cart.toString());
+        System.out.println("Cost of ammunition in cart = " + cart.calculateCostOfAmmunitionInCart());
+
+        System.out.println("*SHOP BEFORE SORTING*");
+        System.out.println(shop.toString());
+
+        shop.sortAllAmmunitionByWeight();
+        System.out.println(shop.toString());
+
+        shop.sortAllAmmunitionByClass();
+        System.out.println(shop.toString());
+
+        System.out.println(
+              shop.getFilteredAmmunitionByPriceDiapason(1000,2000)
+                    .toString()
+                    .replaceAll("}, ","}\n"));
+
     }
 }

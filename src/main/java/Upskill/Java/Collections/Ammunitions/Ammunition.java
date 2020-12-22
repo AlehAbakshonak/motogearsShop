@@ -50,11 +50,11 @@ abstract public class Ammunition {
    @Override
    public String toString() {
       return "Ammunition{" +
-            "name='" + name + '\'' +
+            "name=\"" + name + '\"' +
             ", weight=" + weight +
             ", cost=" + cost +
             ", respect=" + respect +
-            '}';
+            ", Type: }";
    }
 
    @Override

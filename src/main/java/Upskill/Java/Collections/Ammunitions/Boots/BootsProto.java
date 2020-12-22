@@ -46,7 +46,7 @@ public class BootsProto extends Ammunition {
       return super.toString().replace("}",
             "BootsProto{" +
                   "bootsType=" + bootsType +
-                  "kneeProtectionPlate=" + kneeProtectionPlate +
+                  ", kneeProtectionPlate=" + kneeProtectionPlate +
                   ", fingersProtectionSteelCup=" + fingersProtectionSteelCup +
                   "}}");
    }

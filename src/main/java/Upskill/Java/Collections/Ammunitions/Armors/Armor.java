@@ -48,7 +48,7 @@ public class Armor extends Ammunition {
       return super.toString().replace("}",
             "Armor{" +
                   "armorType=" + armorType +
-                  "neckProtection=" + neckProtection +
+                  ", neckProtection=" + neckProtection +
                   ", torsoPlatesStrengthClass=" + torsoPlatesStrengthClass +
                   "}}");
    }
